@@ -1,0 +1,28 @@
+let img;
+
+function preload(){
+  img=loadImage("kk.png");
+}
+
+  let rectY = 0;
+
+function setup() {
+   createCanvas(400, 400);
+ image(img,0,0);
+  }
+
+function draw() {
+  background(img);
+
+   rect(110, rectY, 120, 55);
+   line(75,150,110,160);
+   line(230,161,275,140);
+
+  
+
+  rectY++;
+
+ if (rectY < 0) {
+    rectY = 160;
+  }
+}
